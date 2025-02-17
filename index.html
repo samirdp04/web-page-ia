@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carnaval de Barranquilla 2025</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100">
+    <!-- Navbar -->
+    <nav class="bg-[#6e72ff] text-white shadow-lg fixed w-full z-50">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <!-- Logo pequeño -->
+                <a href="index.html">
+                    <h1 class="hover:text-yellow-300 transition duration-300 font-size:10px"> Carnaval de Barranquilla</h1>
+                </a>
+    
+                <!-- Menú para pantallas grandes -->
+                <div class="hidden md:flex space-x-6">
+                    <a href="#inicio" class="hover:text-yellow-300 transition duration-300">Inicio</a>
+                    <a href="#eventos" class="hover:text-yellow-300 transition duration-300">Eventos</a>
+                    <a href="#galeria" class="hover:text-yellow-300 transition duration-300">Galería</a>
+                    <a href="#video-carnaval" class="hover:text-yellow-300 transition duration-300">Video</a>
+                </div>
+    
+                <!-- Botón del menú de hamburguesa (solo en móviles) -->
+                <button class="md:hidden text-white focus:outline-none" id="menuButton">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+    
+            <!-- Menú móvil (oculto por defecto) -->
+            <div class="md:hidden mt-4 hidden" id="mobileMenu">
+                <div class="flex flex-col space-y-4">
+                    <a href="#inicio" class="text-white hover:text-yellow-300">Inicio</a>
+                    <a href="#eventos" class="text-white hover:text-yellow-300">Eventos</a>
+                    <a href="#galeria" class="text-white hover:text-yellow-300">Galería</a>
+                    <a href="#contacto" class="text-white hover:text-yellow-300">Contacto</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero-section min-h-screen flex items-center pt-16" style="background-image: url(assets/img/imagen1.jpeg);">
+        <div class="container mx-auto px-4 py-20">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 text-center md:text-left">
+                    <h1 class="text-4xl md:text-6xl font-bold mb-6 text-green-600">
+                        ¡Quien lo vive es quien lo goza!
+                    </h1>
+                    <p class="text-lg md:text-xl mb-8 text-black">
+                        Vive la magia del Carnaval de Barranquilla 2025, Patrimonio Cultural de la Humanidad
+                    </p>
+                    <button class="bg-red-600 text-white px-8 py-3 rounded-full hover:bg-red-700 transition duration-300 transform hover:scale-105">
+                        ¡Compra tus entradas!
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Eventos Section -->
+    <section id="eventos" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-red-600 mb-12">Eventos Principales</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Evento 1 -->
+                <div class="event-card bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300">
+                    <img src="assets/img/batalladeflores.jpg" alt="Batalla de Flores" class="w-full">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-yellow-600">Batalla de Flores</h3>
+                        <p class="text-gray-600">El desfile más importante del Carnaval, lleno de color y alegría.</p>
+                    </div>
+                </div>
+                <!-- Evento 2 -->
+                <div class="event-card bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300">
+                    <img src="assets/img/lagranparada.jpg" alt="Gran Parada" class="w-full">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-green-600">Gran Parada</h3>
+                        <p class="text-gray-600">Tradición y folclor en su máxima expresión.</p>
+                    </div>
+                </div>
+                <!-- Evento 3 -->
+                <div class="event-card bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300">
+                    <img src="assets/img/joselito.jpg" alt="Joselito" class="w-full">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-red-600">Joselito se va con las cenizas</h3>
+                        <p class="text-gray-600">La despedida del Carnaval con el tradicional entierro de Joselito.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="galeria" class="py-20 custom-gradient">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-white mb-12">Galería de Momentos</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <!-- Imagen 1 -->
+                <div class="gallery-item overflow-hidden rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+                    <img src="assets/img/08433d69-2de7-48da-a733-28c2a4abb8a0.jpg" alt="Carnaval 1" class="w-full h-full object-cover">
+                </div>
+                <!-- Imagen 2 -->
+                <div class="gallery-item overflow-hidden rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+                    <img src="assets/img/08cc1188-4cb6-48fe-9f15-6ad338cb4589.webp" alt="Carnaval 2" class="w-full h-full object-cover">
+                </div>
+                <!-- Imagen 3 -->
+                <div class="gallery-item overflow-hidden rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+                    <img src="assets/img/9f29852c-7fcd-44bd-ac9d-ea3bdf2293a1.jpg" alt="Carnaval 3" class="w-full h-full object-cover">
+                </div>
+                <!-- Imagen 4 -->
+                <div class="gallery-item overflow-hidden rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+                    <img src="assets/img/imagen7.jpg" alt="Carnaval 4" class="w-full h-full object-cover">
+                </div>
+                <!-- Imagen 5 -->
+                <div class="gallery-item overflow-hidden rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+                    <img src="assets/img/imagen8.jpg" alt="Carnaval 5" class="w-full h-full object-cover">
+                </div>
+                <!-- Imagen 6 -->
+                <div class="gallery-item overflow-hidden rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+                    <img src="assets/img/imagen9.jpg" alt="Carnaval 6" class="w-full h-full object-cover">
+                </div>
+                <!-- Imagen 7 -->
+                <div class="gallery-item overflow-hidden rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+                    <img src="assets/img/imagen10.jpg" alt="Carnaval 7" class="w-full h-full object-cover">
+                </div>
+                <!-- Imagen 8 -->
+                <div class="gallery-item overflow-hidden rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+                    <img src="assets/img/imagen11.jpg" alt="Carnaval 8" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección del Video del Carnaval -->
+    <section id="video-carnaval" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-red-600 mb-12">Video del Carnaval</h2>
+            <div class="video-container">
+                <!-- Contenedor del Video -->
+                <div class="video-wrapper">
+                    <!-- Video local -->
+                    <video 
+                        class="w-full h-full rounded-lg shadow-lg" 
+                        controls 
+                        loop
+                        title="Video del Carnaval">
+                        <source src="assets/video/video.mp4" type="video/mp4">
+                        Tu navegador no soporta la reproducción de videos.
+                    </video>
+                </div>
+                <!-- Descripción opcional debajo del video -->
+                <p class="mt-6 text-center text-gray-600">
+                    Disfruta de los mejores momentos del Carnaval en este video lleno de color, música y tradición.
+                </p>
+            </div>
+        </div>
+    </section> 
+
+    <!-- Music Player -->
+    <div class="music-player flex flex-col items-center space-y-4">
+        <!-- Imagen que gira -->
+        <div class="relative w-32 h-32">
+            <img 
+                id="rotatingImage" 
+                src="assets/img/logo1.png" 
+                alt="Imagen que gira" 
+                class="w-full h-full rounded-full object-cover"
+            >
+        </div>
+    
+        <!-- Reproductor de audio -->
+        <audio id="carnavalMusic" controls class="w-full max-w-md">
+            <source src="assets/music/Carnaval en Barranquilla.mp3" type="audio/mpeg">
+            Tu navegador no soporta el elemento de audio.
+        </audio>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class=" text-white py-10">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Columna 1: Información de contacto -->
+                <div class="text-center md:text-left">
+                    <h3 class="text-xl font-bold mb-4">Contacto</h3>
+                    <p class="mb-2"><i class="fas fa-map-marker-alt mr-2"></i> Barranquilla, Colombia</p>
+                    <p class="mb-2"><i class="fas fa-phone mr-2"></i> +57 123 456 7890</p>
+                    <p class="mb-2"><i class="fas fa-envelope mr-2"></i> info@carnavaldebarranquilla.com</p>
+                </div>
+    
+                <!-- Columna 2: Enlaces rápidos -->
+                <div class="text-center">
+                    <h3 class="text-xl font-bold mb-4">Enlaces Rápidos</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#inicio" class="hover:text-yellow-300 transition duration-300">Inicio</a></li>
+                        <li><a href="#eventos" class="hover:text-yellow-300 transition duration-300">Eventos</a></li>
+                        <li><a href="#galeria" class="hover:text-yellow-300 transition duration-300">Galería</a></li>
+                        <li><a href="#contacto" class="hover:text-yellow-300 transition duration-300">Contacto</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Columna 3: Redes sociales -->
+                <div class="text-center md:text-right">
+                    <h3 class="text-xl font-bold mb-4">Síguenos</h3>
+                    <div class="flex justify-center md:justify-end space-x-4">
+                        <a href="#" class="text-white hover:text-yellow-300 transition duration-300">
+                            <i class="fab fa-facebook text-2xl"></i>
+                        </a>
+                        <a href="#" class="text-white hover:text-yellow-300 transition duration-300">
+                            <i class="fab fa-twitter text-2xl"></i>
+                        </a>
+                        <a href="#" class="text-white hover:text-yellow-300 transition duration-300">
+                            <i class="fab fa-instagram text-2xl"></i>
+                        </a>
+                        <a href="#" class="text-white hover:text-yellow-300 transition duration-300">
+                            <i class="fab fa-youtube text-2xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Derechos de autor -->
+            <div class="border-t border-white/20 mt-8 pt-6 text-center">
+                <p class="text-sm">
+                    &copy; 2025 Carnaval de Barranquilla. Todos los derechos reservados.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+<script src="scripts.js"></script>
+</body>
+</html>

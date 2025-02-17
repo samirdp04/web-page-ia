@@ -1,0 +1,160 @@
+:root {
+    --carnaval-red: #FF0000;
+    --carnaval-yellow: #FFD700;
+    --carnaval-green: #008000;
+}
+
+nav {
+    background-color: #FF0000 !important;
+}
+
+/* Hero Section con imagen de fondo */
+.hero-section {
+    background-image: url('assets/img/hero-background.jpg'); /* Cambia por tu imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.7); /* Fondo blanco semitransparente */
+}
+
+.hero-section .container {
+    position: relative;
+    z-index: 1;
+}
+
+/* Colores de texto y botones */
+.hero-section h1 {
+    color: #008000; /* Verde para títulos */
+}
+
+.hero-section p {
+    color: #000000; /* Negro para textos pequeños */
+}
+
+.hero-section button {
+    background-color: #ff6b6b; /* Rojo para botones */
+    color: #ffffff; /* Texto blanco en botones */
+}
+
+.hero-section button:hover {
+    background-color: #ff4757; /* Rojo más oscuro al hacer hover */
+}
+
+.carousel-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-slide {
+    display: none;
+    animation: fade 1.5s ease-in-out;
+}
+
+@keyframes fade {
+    from {opacity: 0.4}
+    to {opacity: 1}
+}
+
+.active {
+    display: block;
+}
+
+.custom-gradient {
+    background: linear-gradient(45deg, var(--carnaval-red), var(--carnaval-yellow), var(--carnaval-green));
+    background-size: 200% 200%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {background-position: 0% 50%}
+    50% {background-position: 100% 50%}
+    100% {background-position: 0% 50%}
+}
+
+.music-player {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.rotating {
+    animation: spin 3s linear infinite; /* Gira la imagen continuamente */
+}
+
+/* Contenedor principal del video */
+.video-container {
+    max-width: 1200px; /* Ajusta el ancho máximo del contenedor */
+    margin: 0 auto; /* Centra el contenedor */
+}
+
+/* Contenedor del video */
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* Relación de aspecto 16:9 (9 / 16 * 100) */
+    height: 0;
+    overflow: hidden;
+    border-radius: 12px; /* Bordes redondeados */
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* Sombra */
+}
+
+/* Estilos para el video */
+.video-wrapper video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Asegura que el video cubra todo el espacio */
+}
+
+footer {
+    background-color: #FF0000 !important;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: var(--carnaval-yellow);
+        padding: 1rem;
+        transform: translateY(-100%);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .nav-menu.active {
+        transform: translateY(0);
+    }
+
+    .event-card {
+        margin-bottom: 2rem;
+    }
+}
