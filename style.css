@@ -8,9 +8,8 @@ nav {
     background-color: #FF0000 !important;
 }
 
-/* Hero Section con imagen de fondo */
 .hero-section {
-    background-image: url('assets/img/hero-background.jpg'); /* Cambia por tu imagen de fondo */
+    background-image: url('assets/img/hero-background.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -24,7 +23,7 @@ nav {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(255, 255, 255, 0.7); /* Fondo blanco semitransparente */
+    background: rgba(255, 255, 255, 0.7);
 }
 
 .hero-section .container {
@@ -32,22 +31,21 @@ nav {
     z-index: 1;
 }
 
-/* Colores de texto y botones */
 .hero-section h1 {
-    color: #008000; /* Verde para títulos */
+    color: #008000;
 }
 
 .hero-section p {
-    color: #000000; /* Negro para textos pequeños */
+    color: #000000
 }
 
 .hero-section button {
-    background-color: #ff6b6b; /* Rojo para botones */
-    color: #ffffff; /* Texto blanco en botones */
+    background-color: #ff6b6b;
+    color: #ffffff;
 }
 
 .hero-section button:hover {
-    background-color: #ff4757; /* Rojo más oscuro al hacer hover */
+    background-color: #ff4757;
 }
 
 .carousel-container {
@@ -104,40 +102,36 @@ nav {
 }
 
 .rotating {
-    animation: spin 3s linear infinite; /* Gira la imagen continuamente */
+    animation: spin 3s linear infinite;
 }
 
-/* Contenedor principal del video */
 .video-container {
-    max-width: 1200px; /* Ajusta el ancho máximo del contenedor */
-    margin: 0 auto; /* Centra el contenedor */
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-/* Contenedor del video */
 .video-wrapper {
     position: relative;
-    padding-bottom: 56.25%; /* Relación de aspecto 16:9 (9 / 16 * 100) */
+    padding-bottom: 56.25%;
     height: 0;
     overflow: hidden;
-    border-radius: 12px; /* Bordes redondeados */
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* Sombra */
+    border-radius: 12px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
-/* Estilos para el video */
 .video-wrapper video {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Asegura que el video cubra todo el espacio */
+    object-fit: cover;
 }
 
 footer {
     background-color: #FF0000 !important;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     .nav-menu {
         position: absolute;
@@ -157,4 +151,5 @@ footer {
     .event-card {
         margin-bottom: 2rem;
     }
+
 }
